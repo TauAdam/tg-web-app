@@ -11,6 +11,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --acent: var(--tg-theme-accent-text-color);
 }
 
 a {
@@ -28,8 +30,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
 }
-
+a{ 
+color: var(--tg-theme-link-color);
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -42,9 +48,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  background: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
 }
 button:hover {
   border-color: #646cff;
