@@ -25,5 +25,10 @@ bot.on('message', async (msg) => {
 				keyboard: [[{ text: 'Accept terms and conditions', web_app: { url: 'https://www.google.com' } }]]
 			}
 		})
+		await bot.sendMessage(chatId, 'Welcome to club buddy', {
+			reply_markup: {
+				inline_keyboard: [[{ text: 'Accept terms and conditions', web_app: { url: 'https://www.google.com' } }]]
+			}
+		})
 	}
 })
