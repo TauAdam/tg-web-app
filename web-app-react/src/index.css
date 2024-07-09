@@ -33,8 +33,8 @@ body {
   background: var(--tg-theme-bg-color);
   color: var(--tg-theme-text-color);
 }
-a{ 
-color: var(--tg-theme-link-color);
+a {
+  color: var(--tg-theme-link-color);
 }
 h1 {
   font-size: 3.2em;
@@ -59,6 +59,22 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 }
 
 @media (prefers-color-scheme: light) {
